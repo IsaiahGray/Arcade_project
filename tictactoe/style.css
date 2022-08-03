@@ -1,0 +1,28 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-image: linear-gradient(to left, rgb(255, 235, 235), rgb(255, 243, 243), rgb(255, 235, 235))
+}
+#game-title{
+    font-size: 4rem;
+}
+section {
+    text-align: center;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 22rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cell {
+    font-family: fantasy;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 0 5px #931042;
+    border: .5rem solid #681144;
+    cursor: pointer;
+    line-height: 6rem;
+    font-size: 80px;
+}

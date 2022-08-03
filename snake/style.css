@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+2");
+
+* {
+    font-family: "Baloo 2", cursive;
+    font-weight:bolder;
+    color: #e51313;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, #5a3f37, #2c7744);
+}
+
+main {
+    display: grid;
+    grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+    width: 40rem;
+    height: 40rem;
+    background-color: green;
+    background-image: linear-gradient(to left, #5a3f37, #2c7744)
+}
+
+.cell {
+    border: 0.3px solid #ffffff;
+
+}
+.cell.apple {
+    background-color: red;
+    border-radius: 50%;
+}
+
+.cell.snake {
+    background-color: rgb(85, 255, 0);
+}
+button {
+    border-radius: 0.2rem;
+} 
+#controls {
+    display: none;
+    grid-template: repeat(3, 1fr)/repeat(3,1fr)
+}
+
+button.up {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+button.down {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+button.right {
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+button.left {
+    grid-row: 2/3;
+    grid-column:1/2;
+}
+#scoreStrip {
+    display:none
+}
